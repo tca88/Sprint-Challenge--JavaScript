@@ -30,13 +30,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    **Answer**
+    In the ForEach method, a callback is used to access items in an array without creating a new one. The biggest difference between .forEach and .map is that map returns a new array of elements while in turn passing each element back to the callback.
+
 2. What is the difference between a function and a method?
+
+    **Answer**
+    Methods are functions, in that it’s a piece of code that is called by name, and can be passed parameters and arguments to operate on, but methods are associated with an object, and operates within the class it’s contained in. 
 
 3. What is closure?
 
+    **Answer**
+    The formal definition is that it is the combination of a function and the lexical environment within which that function was declared. This means that closures  are functions that refer to independent variables. The function in a closure remembers the environment that it was created in and can reach outward for context, referencing variables outside of its immediate scope. 
+
 4. Describe the four rules of the 'this' keyword.
 
+    **Answer**
+    1. Window Binding: When in the global scope, the value of "this" will be the window/console object.
+    2. Implicit binding: This means automatic binding, and that if you're invoking a method on an object, then the "this" context is bound to wherever it was invoked.
+    3. New Binding: Whenever a constructor function is used, "this" is tied to the specific instance of the object that is created and returned by the constructor function.
+    4. Explicit Binding: Whenever .apply(), .bind() or .call() methods are used, "this" is explicity defined and overwrites where the this keyword is pointing to.
+
 5. Why do we need super() in an extended class?
+
+    **Answer**
+    The super keyword is used to access and call functions and properties using the “this keyword” from the Parent. It’s the equivalent to Object.create.
 
 ## Project Set up
 
